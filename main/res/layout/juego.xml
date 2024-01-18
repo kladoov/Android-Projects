@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#739ED5"
+    android:id="@+id/frameLayout"
+    tools:context=".juego">
+
+    <!--Nombre de usuario-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="top"
+        android:background="#5B83AD"
+        android:layout_margin="20dp"/>
+    <TextView
+        android:id="@+id/username"
+        android:fontFamily="@font/baloo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="username"
+        android:textSize="20dp"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="24dp"/>
+
+    <!--Puntos-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="top"
+        android:background="#5B83AD"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <TextView
+        android:id="@+id/puntos"
+        android:fontFamily="@font/baloo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="Puntos: 0"
+        android:textSize="20dp"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="83dp"/>
+
+    <!--boton salir y reiniciar-->
+    <Button
+        android:id="@+id/finalizar"
+        android:text="FINALIZAR"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/boton_redondeado_salir"
+        android:fontFamily="@font/baloo"
+        android:onClick="volver"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/reiniciar"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boton_redondeado"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/baloo"
+        android:text="REINICIAR"
+        android:textSize="20dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="20dp"
+        android:onClick="reiniciarJuego"
+        />
+
+    <!--Intentos-->
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="150dp"
+        android:background="#5B83AD"/>
+    <TextView
+        android:id="@+id/intentos"
+        android:textStyle="bold"
+        android:fontFamily="@font/baloo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:text="Tienes 5 intentos"
+        android:layout_gravity="center"
+        android:layout_marginBottom="150dp"/>
+
+
+    <!--Fondos-->
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:background="#5B83AD"/>
+
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:background="#5B83AD"/>
+
+    <TextView
+        android:id="@+id/explosion"
+        android:fontFamily="@font/baloo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="0"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="50dp"/>
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="85dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/explosion"
+        android:onClick="saludar"/>
+
+    <TextView
+        android:id="@+id/barco"
+        android:fontFamily="@font/baloo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="0"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="45dp"/>
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="80dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/barco"
+        android:onClick="saludar"/>
+
+    <!--Comienzo de los botones-->
+    <Button
+        android:id="@+id/botonCenter"
+        style="@style/vistaBoton"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/botonBottom"
+        style="@style/vistaBoton"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"/>
+
+    <Button
+        android:id="@+id/botonTop"
+        style="@style/vistaBoton"
+        android:layout_gravity="center"
+        android:layout_marginBottom="70dp"/>
+
+    <Button
+        android:id="@+id/botonRight"
+        style="@style/vistaBoton"
+        android:layout_gravity="center"
+        android:layout_marginLeft="70dp"/>
+
+    <Button
+        android:id="@+id/botonLeft"
+        style="@style/vistaBoton"
+        android:layout_gravity="center"
+        android:layout_marginRight="70dp"/>
+
+    <Button
+        android:id="@+id/botonTopLeft"
+        style="@style/vistaBoton"
+        android:layout_gravity="center"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="70dp"/>
+
+    <Button
+        android:id="@+id/botonBottomLeft"
+        style="@style/vistaBoton"
+        android:layout_gravity="center"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="70dp"/>
+
+    <Button
+        android:id="@+id/botonBottomRight"
+        style="@style/vistaBoton"
+        android:layout_gravity="center"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="70dp"/>
+
+    <Button
+        android:id="@+id/botonTopRight"
+        style="@style/vistaBoton"
+        android:layout_gravity="center"
+        android:layout_marginLeft="70dp"
+        android:layout_marginBottom="70dp"/>
+
+</FrameLayout>

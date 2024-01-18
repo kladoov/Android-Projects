@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#739ED5"
+    tools:context=".pantalla_inicio">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/baloo"
+        android:text="Designed by kladoov"
+        android:textColor="#020202"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/baloo"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="25"
+        android:text="-HUNDIR LA FLOTA-"
+        android:textColor="#000000"
+        android:textSize="34dp"/>
+
+    <!--imagenes-->
+    <ImageView
+        android:layout_gravity="bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="100dp"
+        android:background="#145796"/>
+
+
+    <ImageView
+        android:id="@+id/pinguino"
+        android:layout_marginBottom="60dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pinguino"
+        android:onClick="saltar"/>
+
+    <!--botones interactivos-->
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/boton_redondeado"
+        android:fontFamily="@font/baloo"
+        android:onClick="iniciar"
+        android:text="INICIAR"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp"
+        tools:visibility="visible" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/boton_redondeado"
+        android:fontFamily="@font/baloo"
+        android:onClick="reglas"
+        android:text="REGLAS"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp" />
+
+</FrameLayout>

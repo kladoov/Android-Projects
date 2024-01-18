@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#739ED5"
+    tools:context=".reglas">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/baloo"
+        android:padding="20dp"
+        android:layout_marginBottom="100dp"
+        android:text="Este juego esta basado en el juego de hundir la flota que ya todos conocemos, en esta version consistira en lo siguiente:"
+        android:textColor="#2B2B2B"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/baloo"
+        android:padding="20dp"
+        android:layout_gravity="center"
+        android:text="Hay 9 botones en los que vas a tener tener que adivinar los 3 barcos para ganar la partida, vas a tener 5 oportunidades para acertar con los barcos."
+        android:textColor="#2B2B2B"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/boton_redondeado_salir"
+        android:fontFamily="@font/baloo"
+        android:onClick="volver"
+        android:text="VOLVER"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="450dp"
+        android:src="@drawable/barcoreglas"/>
+
+</FrameLayout>

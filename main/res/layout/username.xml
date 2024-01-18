@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#739ED5"
+    tools:context=".username">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="250dp"
+        android:fontFamily="@font/baloo"
+        android:text="@string/introduce_tu_nombre_de_usuario"
+        android:textSize="24sp"
+        android:textColor="#333333"
+        />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center|start"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#D2D6E7"
+        android:hint="Introducir..."
+        android:textSize="20dp"
+        android:inputType="text" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/boton_redondeado_salir"
+        android:fontFamily="@font/baloo"
+        android:onClick="volver"
+        android:text="VOLVER"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:background="#324D6F"
+        android:textColor="@color/white"
+        android:fontFamily="@font/baloo"
+        android:text=">"
+        android:textSize="23dp"
+        android:layout_gravity="center|end"
+        android:layout_marginRight="20dp"
+        android:onClick="comenzar"/>
+
+    <!--IMAGENES-->
+    <ImageView
+        android:id="@+id/nubeMovimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:src="@drawable/nube" />
+
+    <ImageView
+        android:id="@+id/pinguinoSaludo"
+        android:layout_gravity="bottom|start"
+        android:layout_marginLeft="52dp"
+        android:layout_marginBottom="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pinguino"
+        android:onClick="saludar"/>
+
+</FrameLayout>
